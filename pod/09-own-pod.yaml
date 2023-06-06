@@ -7,5 +7,4 @@ spec:
   containers:
     - name: owncopy-container
       image: richeb/copy
-      ports:
-      - containerPort: 80
+      

@@ -5,9 +5,7 @@ metadata:
   labels:
     course: docker
     duration: 25hr
-    trainer: siva
-  annotations:
-    org.docker.kubernetes.image.maintainer: siva
+    trainer: chay
 spec:
   containers:
   - name: nginx

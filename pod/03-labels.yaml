@@ -6,7 +6,8 @@ metadata:
     course: docker
     duration: 25hr
     trainer: chay
-  annotations: org.docker.maintainer: chay
+  annotations: 
+  org.docker.maintainer: chay
 spec:
   containers:
   - name: nginx

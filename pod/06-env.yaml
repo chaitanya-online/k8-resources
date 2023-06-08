@@ -10,10 +10,10 @@ spec:
     - name: course
       value: docker
     - name: trainer
-      value: siva
+      value: chay
     - name: duration
       value: 25hrs
     - name: DB_HOST
       value: db.admin.com
     - name: username
-      value: sivakumar
+      value: chaitanya

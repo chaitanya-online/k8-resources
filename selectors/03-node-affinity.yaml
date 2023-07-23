@@ -6,7 +6,7 @@ spec:
   affinity:
     nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
+      - weight: 51
         preference:
           matchExpressions:
           - key: tier

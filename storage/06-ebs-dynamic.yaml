@@ -1,3 +1,6 @@
+# Don't forget to install ebs drivers 
+# Drivers link kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.21"
+# Make sure before applying it should have given  ec2- full access  iam permisson for spot instance
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass

@@ -22,7 +22,8 @@ metadata:
   namespace: roboshop
 subjects:
 - kind: User
-  name: roboshop-admin  # User name in iam
+  name: roboshop-admin  # User name in iam  Note :- just by maintained name k8"s will not understand this user belongs to aws iam user we need to do authentication by using this cmd - > kubectl get configmap aws-auth -n kube-system -o yaml
+
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role

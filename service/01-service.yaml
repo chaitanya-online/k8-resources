@@ -21,8 +21,8 @@ spec:
     server: nginx
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 80   # Service port
+      targetPort: 80   #container port
 ---
 apiVersion: v1
 kind: Pod

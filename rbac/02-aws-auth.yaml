@@ -8,7 +8,9 @@ data:
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - userarn: arn:aws:iam::325196226102:user/roboshop-admin
-      username: roboshop-admin    
+      username: roboshop-admin
+    - userarn: arn:aws:iam::325196226102:user/chaitanya
+      username: chaitanya     
 kind: ConfigMap
 metadata:
   creationTimestamp: "2023-07-30T05:47:32Z"

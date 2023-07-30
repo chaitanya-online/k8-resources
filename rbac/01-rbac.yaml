@@ -1,12 +1,12 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: roboshop
+  name: roboshop   # Name Spce creation
   labels:
     name: roboshop
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+kind: Role    # Roles creation
 metadata:
   namespace: roboshop
   name: roboshop-admin-role
@@ -16,13 +16,13 @@ rules:
   verbs: ["*"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: RoleBinding    # Attaching roles to  user which we created in IAM service
 metadata:
   name: roboshop-admin-rolebinding
   namespace: roboshop
 subjects:
 - kind: User
-  name: roboshop-admin
+  name: roboshop-admin  # User name in iam
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
